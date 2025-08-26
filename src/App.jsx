@@ -1,6 +1,7 @@
 import {useState, useRef, useEffect } from 'react';
 import conch from './assets/conch.png'
 import './App.css'
+import Typewriter from 'typewriter-effect';
 
 function App() {
   const answers = [
@@ -98,9 +99,14 @@ function App() {
       {/* Pass the dialog text to ::after via CSS var (note the quotes) */}
       <div
         className="conch"
-        style={{ "--answer": `"${answer || "..."}"` }}
-        data-empty={String(!answer)}
       >
+        <Typewriter
+          options={{
+            strings: [answer],
+            autoStart: true,
+            loop: true,
+          }}
+        />
         <img src={conch} alt="Green pixel conch shell" />
       </div>
 

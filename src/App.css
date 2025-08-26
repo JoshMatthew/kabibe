@@ -56,33 +56,33 @@
 }
 
 /* dialog on the right using the CSS var */
-.conch::after {
-  position: absolute;
-  top: 20px;
-  left: 60%;
-  margin-left: 16px;
-
-  min-width: 240px;
-  max-width: 320px;
-  min-height: 96px;
-  padding: 12px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: pink;
-  border: 2px solid #333;
-  border-radius: 10px;
-  box-shadow: 0 6px 14px rgba(0,0,0,.2);
-  z-index: 10;
-
-  /* Pull text from React via CSS var (fallback '...') */
-  content: var(--answer, '...');
-  white-space: pre-wrap;
-  line-height: 1.2;
-  color: #111;
-}
+/* .conch::after { */
+/*   position: absolute; */
+/*   top: 20px; */
+/*   left: 60%; */
+/*   margin-left: 16px; */
+/**/
+/*   min-width: 240px; */
+/*   max-width: 320px; */
+/*   min-height: 96px; */
+/*   padding: 12px; */
+/**/
+/*   display: flex; */
+/*   align-items: center; */
+/*   justify-content: center; */
+/**/
+/*   background: pink; */
+/*   border: 2px solid #333; */
+/*   border-radius: 10px; */
+/*   box-shadow: 0 6px 14px rgba(0,0,0,.2); */
+/*   z-index: 10; */
+/**/
+/*   /* Pull text from React via CSS var (fallback '...') */ */
+/*   content: var(--answer, '...'); */
+/*   white-space: pre-wrap; */
+/*   line-height: 1.2; */
+/*   color: #111; */
+/* } */
 
 /* optional: hide when empty */
 .conch[data-empty="true"]::after {
