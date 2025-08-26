@@ -105,6 +105,10 @@ function App() {
             strings: [answer],
             autoStart: true,
             loop: true,
+            delay: 45,
+            deleteSpeed: 10,
+            pauseFor: 10000,
+            cursor: '.'
           }}
         />
         <img src={conch} alt="Green pixel conch shell" />
